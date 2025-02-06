@@ -43,3 +43,11 @@ Pour supprimer également les volumes et les données, exécute :
 
 ---
 
+## commande et lien à utilisées
+Tester notre configuration
+    ```bash
+        docker-compose exec logstash bin/logstash --config.test_and_exit -f /usr/share/logstash/pipeline/logstash.conf
+    ```
+    
+Lien pour voir notre résultat:
+- [Lien resultat]([htt](http://localhost:9200/csv-data/_search?q=*))`http://localhost:9200/csv-data/_search?q=*`
