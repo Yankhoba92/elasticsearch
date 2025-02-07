@@ -56,6 +56,7 @@ services:
     depends_on:
       - logstash
       - elasticsearch
+    command: ["filebeat", "-e", "--strict.perms=false"]
 
 
   metricbeat:
