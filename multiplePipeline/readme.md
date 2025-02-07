@@ -1,4 +1,4 @@
-# TP ELK-Monitoring
+# TP ELK-MultiplePipeline
 
 Ce TP permet d'ingérer des logs générés en Python via la stack ELK (Elasticsearch, Logstash, Kibana) en utilisant Docker et Filebeat pour transférer les logs vers Logstash et Elasticsearch.
 
@@ -56,7 +56,7 @@ Lancer notre script py
     ```bash
         python send_logs.py
     ```
-Test de la connexion à Elasticsearch
+vérifier si les indices sont créés :
     ```bash
-    curl http://127.0.0.1:9200
+     curl http://127.0.0.1:9200/_cat/indices?v 
     ```
